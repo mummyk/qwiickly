@@ -17,7 +17,7 @@ workflows:
     scripts:
       - cd source_code && flutter packages pub get
       #- cd source_code && flutter analyze
-      - cd source_code && flutter test
+      #- cd source_code && flutter test
       - find . -name "Podfile" -execdir pod install \;
       - keychain initialize
       - app-store-connect fetch-signing-files "app.qwiikly.com" --type IOS_APP_STORE
