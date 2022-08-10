@@ -18,8 +18,7 @@ import 'package:flutter/foundation.dart';
 
 class AddressRepository {
   Future<AddressResponse> getAddressList() async {
-    Uri url =
-        Uri.parse("${AppConfig.BASE_URL}/user/shipping/address");
+    Uri url = Uri.parse("${AppConfig.BASE_URL}/user/shipping/address");
     final response = await http.get(
       url,
       headers: {
@@ -128,7 +127,6 @@ class AddressRepository {
     final response = await http.post(url,
         headers: {
           "Content-Type": "application/json",
-          "Content-Type": "application/json",
           "Authorization": "Bearer ${access_token.$}"
         },
         body: post_body);
@@ -195,7 +193,6 @@ class AddressRepository {
           "App-Language": app_language.$
         },
         body: post_body);
-
 
     return shippingCostResponseFromJson(response.body);
   }
