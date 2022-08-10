@@ -16,7 +16,7 @@ workflows:
       cocoapods: default
     scripts:
       - cd source_code && flutter packages pub get
-      - cd source_code && flutter analyze
+      #- cd source_code && flutter analyze
       - cd source_code && flutter test
       - find . -name "Podfile" -execdir pod install \;
       - keychain initialize
