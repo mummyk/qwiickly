@@ -24,7 +24,7 @@ workflows:
         --create
       - keychain add-certificates
       - xcode-project use-profiles
-      - cd source_code && flutter build ipa #--export-options-plist=~/export_options.plist
+      - cd source_code && flutter build ipa --export-options-plist=~/export_options.plist
     artifacts:
       - source_code/build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
