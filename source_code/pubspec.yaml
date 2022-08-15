@@ -3,7 +3,7 @@ description: This is the flutter mobile application for active ecommerce cms
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -78,7 +78,6 @@ dependencies:
   validators: ^3.0.0
   flutter_math_fork: ^0.5.0
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -87,11 +86,10 @@ dev_dependencies:
   flutter_launcher_icons: ^0.9.2
   google_maps_flutter: ^2.0.11
 
-
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/app_logo.png"
+  image_path: "assets/app_logos.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -103,9 +101,6 @@ flutter:
   assets:
     - assets/
     - dummy_assets/
-
-
-
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
